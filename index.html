@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		button {
+			border: 3px solid skyblue;
+			background-color: rgba(0, 0, 0, 0);
+			color: skyblue padding: 10px;
+		}
+
+		button:hover {
+			color: white;
+			background-color: skyblue;
+		}
+	</style>
 </head>
 
 <body>
-	<div>Teachable Machine Image Model</div>
-	<button type="button" onclick="init()">Start</button>
-	<div id="webcam-container"></div>
-	<div id="label-container"></div>
+	<h1>
+		<span>과</span>
+		<span>일</span>
+		<span>도</span>
+		<span>감</span>
+		<span>.</span>
+		<span>Beta_ver</span>
+	</h1>
+	<h2>
+		<button type="button" onclick="init()">시작</button>
+	</h2>
+	<h3>
+		<div id="webcam-container"></div>
+	</h3>
+	<h4>
+		<div id="label-container"></div>
+	</h4>
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 	<script type="text/javascript">
